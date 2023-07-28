@@ -18,22 +18,18 @@ export const initialContext = `
 <p>
   E aqui está um exemplo de como criar um botão personalizado com algumas classes utilitárias:
 </p>
-<pre><code>&lt;button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"&gt;
-Clique Aqui
-&lt;/button&gt;
-</code></pre>
+<pre><code class="language-html">&lt;button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"&gt;Clique Aqui&lt;/button&gt;</code></pre>
 
 <p>
   Além disso, podemos criar uma barra de navegação responsiva de forma muito simples:
 </p>
-<pre><code>&lt;nav class="bg-gray-800 p-4"&gt;
+<pre><code class="language-html">&lt;nav class="bg-gray-800 p-4"&gt;
 &lt;ul class="flex space-x-4"&gt;
   &lt;li&gt;&lt;a href="#" class="text-white hover:text-gray-300"&gt;Início&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" class="text-white hover:text-gray-300"&gt;Sobre Nós&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href="#" class="text-white hover:text-gray-300"&gt;Contato&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/nav&gt;
-</code></pre>
+&lt;/nav&gt;</code></pre>
 
 <h3>Os Desafios e as Recompensas</h3>
 <p>
@@ -49,4 +45,4 @@ Clique Aqui
 </p>
 <p>
   E você, já teve suas próprias aventuras com o Tailwind CSS? Compartilhe suas experiências nos comentários abaixo. Até a próxima!
-</p>`
+</p>`;
