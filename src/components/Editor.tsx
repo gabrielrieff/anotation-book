@@ -4,6 +4,16 @@ import {
 } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
 
+import TaskItem from '@tiptap/extension-task-item'
+import TaskList from '@tiptap/extension-task-list'
+
+import Paragraph from '@tiptap/extension-paragraph'
+
+import Table from '@tiptap/extension-table'
+import TableCell from '@tiptap/extension-table-cell'
+import TableHeader from '@tiptap/extension-table-header'
+import TableRow from '@tiptap/extension-table-row'
+
 import { lowlight } from "lowlight";
 import CodeBlockLowlight from "@tiptap/extension-code-block-lowlight";
 import html from "highlight.js/lib/languages/xml";
@@ -23,6 +33,17 @@ export function Editor() {
       CodeBlockLowlight.configure({
         lowlight,
       }),
+      Paragraph,
+      TaskList,
+      TaskItem.configure({
+        nested: true,
+      }),
+      Table.configure({
+        resizable: true,
+      }),
+      TableRow,
+      TableHeader,
+      TableCell,
     ],
     content: initialContext,
     editorProps: {
@@ -32,6 +53,10 @@ export function Editor() {
     },
   });
 
+
+  if (!editor) {
+    return null
+  }
   return (
     <>
       <EditorContent
