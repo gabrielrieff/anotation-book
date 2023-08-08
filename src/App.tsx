@@ -1,13 +1,12 @@
 import { ButtonAnotation } from "./components/ButtonAnotation/ButtonAnotation";
 import { Editor } from "./components/Editor";
 
-import { BsCheckAll } from "react-icons/bs";
-import { GrFormClose } from "react-icons/gr";
-
 function App() {
   const onToggleState = () => {
     console.log("ok");
   };
+
+
 
   return (
     <>
@@ -22,24 +21,12 @@ function App() {
             <div className="flex flex-col gap-2 divide-y-2">
               <ButtonAnotation
                 onToggleState={onToggleState}
-                title="O que fiz hoje"
-                date="31/07/2023"
               />
             </div>
           </aside>
           <main className="p-4">
             <div className="flex flex-col justify-between">
               <Editor />
-
-              <div className="flex justify-evenly gap-1 fixed bottom-11 right-10">
-                <button className="bg-blue-500 hover:bg-blue-400 duration-[0.3s] rounded">
-                  <BsCheckAll className="w-8 h-8 text-white" />
-                </button>
-
-                <button className="bg-red-500 hover:bg-red-400 duration-[0.3s] rounded">
-                  <GrFormClose className="w-8 h-8 text-white" />
-                </button>
-              </div>
             </div>
           </main>
         </div>
